@@ -1,0 +1,8 @@
+Run cucumber test based on tags:
+mvn clean test -Dcucumber.filter.tags="@smoke"
+
+
+Dependency Injection (DI) containers - it simply tells a DI container to instantiate your step definition classes and wire them up correctly.
+Pico container instantiated the required classes and hold the object throughout the program. Every scenario will get its own separate instance of
+required objects.
+Using Pico container we can eliminate the use of static, thread local etc.
